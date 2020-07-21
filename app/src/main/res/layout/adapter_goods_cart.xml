@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_2"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/goods_image"
+            android:layout_margin="@dimen/dp_2"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/goods_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/goods_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_margin="@dimen/dp_3"
+                android:text="【直供】贵州扶贫无砟西洋菜30-32斤/件泡沫箱装，发"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+
+            <TextView
+                android:id="@+id/goods_unit"
+                android:layout_below="@+id/goods_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_2"
+                android:textSize="@dimen/sp_11"
+                android:textColor="@color/black"
+                android:text="30斤-32斤/件" />
+
+
+            <TextView
+                android:id="@+id/goods_price"
+                android:layout_below="@+id/goods_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp_13"
+                android:text="￥100元" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_below="@+id/goods_price"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/subtract_image"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:src="@mipmap/jian"
+                    />
+
+                <TextView
+                    android:id="@+id/num"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_20"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/subtract_image"
+                    android:textColor="@color/black"
+                    android:text="1"
+                    />
+
+                <ImageView
+                    android:id="@+id/add_image"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_toRightOf="@+id/num"
+                    android:src="@mipmap/add"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_3"
+        android:layout_margin="@dimen/dp_3"
+        android:background="@color/whitesmoke"
+        />
+</LinearLayout>
